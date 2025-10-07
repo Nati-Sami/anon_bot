@@ -8,7 +8,7 @@ OWNER_ID = int(os.getenv("OWNER_ID"))
 # Handler for /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "👋 Welcome! Send me any message and it will be forwarded anonymously to the admin."
+        "👋 Welcome! Send me any message and it will be forwarded anonymously to the admin. ቃኡን ኣነባለው!"
     )
 
 # Handler for all text messages
