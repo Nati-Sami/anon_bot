@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 BOT_TOKEN = "8273600698:AAHPgCW-ZYUiNhxIsavxgh688TmbdopccL0"
-OWNER_ID = "369950937"
+OWNER_ID = "313379421"
 
 # Handler for /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
