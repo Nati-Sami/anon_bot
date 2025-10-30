@@ -2,7 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-BOT_TOKEN = "8306130636:AAFBv5JO_TrKOTM3AGD8C7ykheadafRFua4"
+BOT_TOKEN = "8273600698:AAHPgCW-ZYUiNhxIsavxgh688TmbdopccL0"
 OWNER_ID = "369950937"
 
 # Handler for /start command
