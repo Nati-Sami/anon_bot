@@ -18,10 +18,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 - እግዚአብሔር ቃሉን ተጠቅሞ የሰራላችሁ ምስክርነቶች ካላችሁ
 ከታች ባለው መፃፍያ ቦታ ላይ እንድታሰፍሩ እንጠይቃለን።  
 
-*ይሄ የመረጃ መቀበያ ቋት ላይ ሲፅፉ ማንነታችሁ እንደማይታወቅ (anonymous) ልንገልፅ እንወዳለን
+ይሄ የመረጃ መቀበያ ቋት ላይ ሲፅፉ ማንነታችሁ እንደማይታወቅ (anonymous) ልንገልፅ እንወዳለን
 
-የጌታ ጸጋና ሰላም ይብዛላችሁ!"
-    )
+የጌታ ጸጋና ሰላም ይብዛላችሁ!")
 
 # Handler for all text messages
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
