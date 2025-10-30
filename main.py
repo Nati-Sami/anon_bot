@@ -7,20 +7,22 @@ OWNER_ID = int(os.getenv("OWNER_ID"))
 
 # Handler for /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "ሰላም የቃሉን አነባለሁ ቤተሰቦች
+
+    welcome_message = """ሰላም የቃሉን አነባለሁ ቤተሰቦች
 እንኳን ወደ ቃሉን አነባለሁ ሀሳብ መስጫ ቋት በደህና መጡ
 
 ይሄ ቋት(Bot) የተዘጋጀው አንድን መፅሐፍ በቃሉን አነባለሁ አንብበን ከጨረስን በኋላ ስላነበብነው መፅሐፍ ያላችሁን 
 - ሀሳብና አስተያየት
 - ስታነቡ ከቃሉ የተማራችሁትን  
-- በመፅሐፍ ውስጥ  የነበራችሁን ጥያቄ እና
+- በመፅሐፍ ውስጥ የነበራችሁን ጥያቄ እና
 - እግዚአብሔር ቃሉን ተጠቅሞ የሰራላችሁ ምስክርነቶች ካላችሁ
 ከታች ባለው መፃፍያ ቦታ ላይ እንድታሰፍሩ እንጠይቃለን።  
 
-ይሄ የመረጃ መቀበያ ቋት ላይ ሲፅፉ ማንነታችሁ እንደማይታወቅ (anonymous) ልንገልፅ እንወዳለን
+*ይሄ የመረጃ መቀበያ ቋት ላይ ሲፅፉ ማንነታችሁ እንደማይታወቅ (anonymous) ልንገልፅ እንወዳለን
 
-የጌታ ጸጋና ሰላም ይብዛላችሁ!")
+የጌታ ጸጋና ሰላም ይብዛላችሁ!
+"""
+    await update.message.reply_text(welcome_message)
 
 # Handler for all text messages
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
