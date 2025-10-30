@@ -31,7 +31,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Forward anonymously to the owner
     await context.bot.send_message(chat_id=OWNER_ID, text=f"📨 Anonymous message:\n\n{message}")
     # Confirm to sender
-    await update.message.reply_text("✅ Message sent anonymously!")
+    await update.message.reply_text("ሃሳብዎን ስላካፈሉን እናመሰግናለን! በድጋሚ ከእርስዎ ለመስማት በጉጉት እንጠባበቃለን፣ አሁንም ማንበቦን ይቀጥሉ! መልካም ቆይታ ይሁንልዎ!")
 
 def main():
     app = Application.builder().token(BOT_TOKEN).build()
